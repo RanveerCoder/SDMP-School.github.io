@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    color: violet;
+    padding: 20px;
+  }
+  nav {
+    flex: 1;
+    text-align: right;
+  }
+  nav ul {
+    display: inline-block;
+    list-style: none;
+  }
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  a {
+    text-decoration: none;
+    color: #555;
+  }
+  p {
+    color: #555;
+  }
+  .container {
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .col1 {
+    text-transform: capitalize;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .col2 {
+    flex-basis: 50%;
+    min-width: 300px;
+  }
+  .col2 img {
+    max-width: 100%;
+    padding: 50px 0px;
+  }
+  .col2 h1 {
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0px;
+    font-family: "Girassol", cursive;
+  }
+  .col2 p {
+    font-family: "Josefin Sans", sans-serif;
+    color: black;
+  }
+  .button {
+    display: inline-block;
+    background-color: #ff523b;
+    color: whitesmoke;
+    padding: 8px 30px;
+    margin: 30px 0px;
+    border-radius: 35px;
+    font-family: "Oswald", sans-serif;
+    transition: background 0.5s;
+  }
+  .button:hover {
+    background-color: rgba(0, 0, 0, 0.863);
+  }
+  .header {
+    background-color: rgba(255, 230, 238, 0.925);
+  }
+  .fp {
+    margin: 70px 0px;
+  }
+  .fi {
+    flex-basis: 25%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    display: inline-block;
+    padding: 17px;
+  }
+  .heading {
+    text-align: center;
+  }
+  .colR {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+  }
+  .colR img {
+    width: 100%;
+  }
+  .title {
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: red;
+  }
+  .title::after {
+    content: "";
+    background-color: #a31e0c9a;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .ratings {
+    color: #ff523b;
+  }
+  .colR:hover {
+    transform: translateY(-7px);
+  }
+  hr {
+    color: darkgoldenrod;
+  }
+  .offer {
+    background-color: rgba(255, 230, 238, 0.925);
+    padding: 30px 0;
+  }
+  .colR .offerimg {
+    padding: -14px;
+    display: inline-block;
+  }
+  .col5 {
+    flex-basis: 20%;
+    width: auto;
+  }
+  /* brands */
+  .brands {
+    margin: 100px auto;
+  }
+  .col5 {
+    width: 160px;
+  }
+  .col5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+    padding: 9px;
+  }
+  .col5 img:hover {
+    filter: grayscale(0);
+  }
+  .btn {
+    display: inline-block;
+    background-color: #ff523b;
+    color: whitesmoke;
+    padding: 8px 30px;
+    margin: 30px 0px;
+    border-radius: 35px;
+    font-family: "Oswald", sans-serif;
+    transition: background 0.5s;
+  }
+  .button:hover {
+    background-color: rgba(0, 0, 0, 0.863);
+  }
+  .footer {
+    background-color: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+  }
+  .footer p {
+    color: #8a8a8a;
+  }
+  .footer h3 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  .footer1 .footer2 .footer3 .footer4 {
+    min-width: 250px;
+    margin-bottom: 20px;
+  }
+  .footer1 {
+    flex-basis: 30%;
+  }
+  .footer2 {
+    flex: 1;
+    text-align: center;
+  }
+  .footer2 img {
+    width: 180px;
+    margin-bottom: 20px;
+  }
+  .footer3, .footer4{
+    flex-basis: 12%;
+    text-align: center;
+  }
+  ul
+  li{
+    list-style-type: none;
+    padding: 8px;
+  }
+  .hamburgerbtn{
+    width: 37px;
+    margin-left: 20px;
+    display: none;
+  }
+  /* media query for hamburgerbtn  */
+  
+  @media only screen and (max-width: 700px){
+  
+    nav ul{
+      position: absolute;
+      top: 70px;
+      left: 0px;
+      background: #333;
+      width: 100%;
+      overflow: hidden;
+      transition: max-hieght 1s;
+    }
+    nav ul li{
+      display: block;
+      margin-right: 50px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    nav ul li a{
+      color: #fff;
+    }
+    .hamburgerbtn{
+      display: block;
+      cursor: pointer;
+    }
+  }
