@@ -9,7 +9,7 @@ $Gender = $_POST['Gender'];
 $Applyingfor = $_POST['Applyingfor'];
 $AadharNo. = $_POST['AadharNo'];
 $PhoneNo. = $_POST['PhoneNo'];
-$EmailId  = $_POST['EmailId'];
+$visitor_email  = $_POST['EmailId'];
 $Address = $_POST['Address'];
 
 $email_from = 'factpathshalaoficial@gmail.com';
@@ -23,13 +23,13 @@ $email_body = "Father's Name: $FatherName.\n".
               "applying For Std.: $Applyingfor.\n".
               "Aadhar No.: $AadharNo.\n".
               "Phone No.: $PhoneNo.\n".
-              "Email Id: $EmailId.\n".
+              "Email Id: $visitor_email.\n".
               "Address: $Address.\n".
 
               $to = "sdmpsnaigaon@gmail.com";
 
               $headers = "From: $email_from \r\n".
-              $headers = "Reply-To: $EmailId \r\n".
+              $headers = "Reply-To: $visitor_email\r\n".
               
               mail($to,$email_subject,$email_body,$headers)
               
